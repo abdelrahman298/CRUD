@@ -8,8 +8,10 @@
     <link rel="shortcut icon" href="img/download.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/all.min.css" />
@@ -81,6 +83,27 @@
         <tbody id="tableBody"></tbody>
       </table>
     </section>
+    <div id="inValidPage" class="inValidPage">
+      <div class="inValidContainer">
+        <div class="d-flex justify-content-start align-items-start">
+          <div class="circle-valid red-circle me-2"></div>
+          <div class="circle-valid yellow-circle me-2"></div>
+          <div class="circle-valid green-circle me-2"></div>
+        </div>
+        <p class="inValidCaption">
+          Site Name or Url is not valid, Please follow the rules below :
+        </p>
+        <p class="inValidNote">
+          <i class="fa-regular fa-circle-right p-2"></i>Site name must contain
+          at least 3 characters
+        </p>
+
+        <p class="inValidNote">
+          <i class="fa-regular fa-circle-right p-2"></i>Site URL must be a valid
+          one
+        </p>
+      </div>
+    </div>
     <script src="js/script.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>

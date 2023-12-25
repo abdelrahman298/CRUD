@@ -48,7 +48,7 @@ function displayWebsites(array) {
         
       </td>
       <td>
-        <button type="button" class="btn btn-danger">
+        <button type="button" class="btn btn-danger" onClick="deleteWebsite(${i})">
           <i class="fa-solid fa-trash-can"></i> Delete
         </button>
       </td>
@@ -56,4 +56,14 @@ function displayWebsites(array) {
     cartoona += site;
   }
   tableBody.innerHTML = cartoona;
+}
+
+function deleteWebsite(index) {
+  websites.splice(index, 1);
+  localStorage.setItem("websitesList", JSON.stringify(websites));
+  displayWebsites(websites);
+}
+
+function checkUrl() {
+  var inValidPage = ``;
 }
