@@ -1,3 +1,16 @@
 * {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "PT Sans Caption", sans-serif;
+}
+
+body {
+  background-color: #f7ecde;
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+  width: fit-content;
+}
+
+h5 {
+  font-family: "Righteous", sans-serif;
 }
