@@ -57,7 +57,11 @@
             />
           </div>
 
-          <button type="button" class="btn btn-primary submit-btn">
+          <button
+            type="button"
+            class="btn btn-primary submit-btn"
+            onclick="addWebsite()"
+          >
             Submit
           </button>
         </div>
@@ -65,36 +69,17 @@
 
       <hr class="hr-below" />
 
-      <div class="row">
-        <div class="col-md-12 col-lg -12">
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">Index</th>
-                <th scope="col">Website Name</th>
-                <th scope="col">Visit</th>
-                <th scope="col">Delete</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>
-                  <button type="button" class="btn btn-visit">
-                    <i class="fa-solid fa-eye"></i> Visit
-                  </button>
-                </td>
-                <td>
-                  <button type="button" class="btn btn-danger">
-                    <i class="fa-solid fa-trash-can"></i> Delete
-                  </button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
+      <table class="table my-4 text-center">
+        <thead>
+          <tr>
+            <th class="text-capitalize">index</th>
+            <th class="text-capitalize">Website Name</th>
+            <th class="text-capitalize">Visit</th>
+            <th class="text-capitalize">Delete</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
     </section>
     <script src="js/script.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>

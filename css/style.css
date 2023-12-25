@@ -50,7 +50,7 @@ hr {
   background-image: linear-gradient(0.15turn, #3ea55b, #b3ac49);
   background-size: 75%;
   background-repeat: repeat;
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 
   font-size: 1.57rem;
@@ -74,5 +74,10 @@ hr {
 
 .btn-visit {
   background-color: #9eb23b;
+  color: #fff;
+}
+
+.btn-visit:hover {
+  background-color: #8b9c35;
   color: #fff;
 }
