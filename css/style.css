@@ -6,11 +6,73 @@ body {
   background-color: #f7ecde;
 }
 
-h1 {
+.title {
   font-family: "Pacifico", cursive;
   width: fit-content;
+  font-size: 3.125rem;
+  margin-top: 5px;
+  position: relative;
+}
+
+.title:before {
+  position: absolute;
+  content: "";
+  height: 37%;
+  width: 100%;
+  bottom: 0;
+  background-color: #fec260;
+  transition: height 0.4s;
+  z-index: -1;
+}
+.title:hover.title:before {
+  height: 66%;
 }
 
 h5 {
   font-family: "Righteous", sans-serif;
+}
+hr {
+  border-width: 2px 0 0px 0;
+  border-style: dotted;
+  border-color: #000;
+  opacity: 1;
+  margin-top: 3.7rem !important;
+}
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #d99c39;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #fec26055;
+}
+.title-caption {
+  /* Create the gradient. */
+  background-image: linear-gradient(0.15turn, #3ea55b, #b3ac49);
+  background-size: 75%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-size: 1.57rem;
+}
+
+.submit-btn {
+  background-color: #d44b25;
+  outline: none;
+  border: none;
+  width: 12%;
+  margin-top: 1rem;
+}
+
+.submit-btn:hover {
+  background-color: #cb4924;
+}
+
+.hr-below {
+  margin: 1.5rem 0 1.5rem 0 !important;
+}
+
+.btn-visit {
+  background-color: #9eb23b;
+  color: #fff;
 }
