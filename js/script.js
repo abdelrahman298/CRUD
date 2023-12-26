@@ -2,6 +2,8 @@ var siteNameInput = document.getElementById("siteName");
 var siteUrlInput = document.getElementById("siteUrl");
 var submitBtn = document.getElementById("submitBtn");
 var tableBody = document.getElementById("tableBody");
+var invalidPage = document.getElementById("inValidPage");
+var closeInvalid = document.getElementById("closeInvalid");
 
 var websites = [];
 if (localStorage.getItem("websitesList") != null) {
@@ -16,14 +18,20 @@ function addWebsite() {
     siteName: siteNameInput.value,
     siteUrl: siteUrlInput.value,
   };
-  //?send it to array
-  websites.push(websiteData);
-  //?send it to local storage
-  localStorage.setItem("websitesList", JSON.stringify(websites));
-  //?display the array in the page
-  displayWebsites(websites);
-  //?clear the inputs
-  // clearInput();
+  var validateResult = validationCheck(siteNameInput.value, siteUrlInput.value);
+
+  if (validateResult == false) {
+    displayInvalid();
+  } else {
+    //?send it to array
+    websites.push(websiteData);
+    //?send it to local storage
+    localStorage.setItem("websitesList", JSON.stringify(websites));
+    //?display the array in the page
+    displayWebsites(websites);
+    //?clear the inputs
+    // clearInput();
+  }
 }
 
 function clearInput() {
@@ -64,6 +72,18 @@ function deleteWebsite(index) {
   displayWebsites(websites);
 }
 
-function checkUrl() {
-  var inValidPage = ``;
+function displayInvalid() {
+  invalidPage.classList.toggle("d-none");
+}
+
+// //? validation function
+function validationCheck(name, url) {
+  var regexName = /[a-zA-Z\d]{3,}/;
+  var regexUrl = /^(https:\/\/)?(www.)?[a-zA-Z0-9_\.]{1,}\.[a-z]{3}$/;
+
+  if (regexName.test(name) && regexUrl.test(url)) {
+    return true;
+  } else {
+    return false;
+  }
 }

@@ -100,11 +100,11 @@ hr {
 
 .inValidContainer {
   position: absolute;
-  height: 35vh;
+  height: 37vh;
   width: 33%;
   background-color: #ffffff;
   border-radius: 10px;
-  padding: 1.5rem;
+  padding: 0.5rem 1rem;
 }
 
 .circle-valid {
@@ -121,6 +121,14 @@ hr {
 .circle-valid.green-circle {
   background-color: #4db748;
 }
+
+.close-invalid {
+  background-color: #fff;
+  border-radius: 50%;
+  border: none;
+  font-size: 2rem;
+}
+
 .inValidCaption {
   margin-top: 1rem;
   font-size: 21px;
