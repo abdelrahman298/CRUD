@@ -1,6 +1,6 @@
-# Bookmark Manager
+# Bookmark Project
 
-Bookmark Manager is a simple web application that allows users to manage bookmarks. Users can add, edit, search, and delete bookmarks. The application uses localStorage to persist bookmark data locally in the user's browser.
+Bookmark Project is a simple web application that allows users to manage bookmarks. Users can add, and delete bookmarks. The application uses localStorage to persist bookmark data locally in the user's browser.
 
 ## Table of Contents
 
