@@ -26,7 +26,6 @@ Bookmark Project is a simple web application that allows users to manage bookmar
 ### Prerequisites
 
 - Modern web browser with localStorage support.
-- I have used localStorage to store your favorite bookmark, and help you to get it back if your browser closed accidently or you have closed it.
 
 ### Installation
 
