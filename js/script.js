@@ -30,7 +30,7 @@ function addWebsite() {
     //?display the array in the page
     displayWebsites(websites);
     //?clear the inputs
-    // clearInput();
+    clearInput();
   }
 }
 
